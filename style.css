@@ -78,3 +78,44 @@ p {
     color: #F3A200;
 }
 
+@media (max-width: 1200px) {
+
+    .container-buttons {
+
+    position: fixed;
+}
+
+    ul {
+
+    grid-template-columns: 170px 170px;
+}
+
+img {
+
+    height: 18vh;
+}
+}
+
+@media (max-width: 760px) {
+    .container-buttons {
+    display: flex;
+    padding: 20px 10px 10px 10px;
+    gap: 15px;
+    position: static;
+}
+
+button {
+    border: 2px solid #F3A200;
+}
+
+   ul {
+
+    grid-template-columns: 150px 150px;
+}
+
+img {
+
+    height: 18vh;
+}
+}
+
