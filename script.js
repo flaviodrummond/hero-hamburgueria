@@ -6,7 +6,13 @@ const buttonFilter = document.querySelector('.search')
 
 let newList = ''
 
-
+// Função para colocar a moeda a frente dos valores. ex:R$
+const currency = (coin) => {
+    return new Intl.NumberFormat('pt-BR', {
+    style: 'currency',
+    currency: 'BRL'
+  }).format(coin);
+}
 
 // Criação do ForEach 
 const optionMenu = (productsArray) => {
